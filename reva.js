@@ -11,10 +11,13 @@ const init = async () => {
     commands.filter((cmd) => cmd.split(".").pop() === "js").forEach((cmd) => {
       const response = client.loadCommand("./commands/"+dir, cmd);
       if(response){
-        client.logger.log(response, "error");
+        console.log(response, "error");
         }
       })
     });
+  
+  
+  }
                                                                     
                                                                     
 
